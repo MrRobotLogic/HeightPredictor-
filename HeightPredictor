@@ -1,0 +1,11 @@
+class HeightPredictor {
+    public double predictHeight(double motherHeight, double fatherHeight, String gender) {
+        if (gender.equals("male")) {
+            return (motherHeight + fatherHeight + 13) / 2;
+        } else if (gender.equals("female")) {
+            return (motherHeight + fatherHeight - 13) / 2;
+        } else {
+            return 0;
+        }
+    }
+}
